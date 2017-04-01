@@ -1,0 +1,25 @@
+#!/bin/bash
+case "$1" in
+	"make")
+	cd library
+	make
+	;;
+	"run")
+	#config-pin P8.13 pwm
+	cd library
+	./main
+	;;
+	"make-and-run")
+	cd library
+	make
+	./main
+	;;
+	"clean")
+	cd library
+	rm -f *.o
+	;;
+	*)
+	echo Invalid parameter for build
+	echo valid parameters: make run make-and-run clean
+	;;
+esac
