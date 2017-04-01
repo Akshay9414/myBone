@@ -4,26 +4,26 @@ Current Wiring Bone library (https://github.com/AbhraneelBera/wiringBone) suppor
 
 # Features
 For fast pin toggling : 
-1) digitalWriteFast(Pin u,uint8_t val); 
+1) digitalWriteFast(Pin u,uint8_t val).
 ex: digitalWriteFast(P8_11,0); 0 -> LOW , 1 -> HIGH
 
-2) digitalReadFast(Pin u);
+2) digitalReadFast(Pin u).
 ex: digitalReadFast(P8_11); returns 0 or 1 and -1 in case of error.
 
-3) analogReadFast(int u); 
+3) analogReadFast(int u).
 ex: analogReadFast(2); returns value of ADC at AIN-2
 
-4) setFrequencyFast(Pin u,float f);
+4) setFrequencyFast(Pin u,float f).
 ex: setFrequency(P8_13,50); sets 50Hz at P8_13 
 
-5) setDutyFast(Pin u,float d);
+5) setDutyFast(Pin u,float d).
 ex: setDutyCycle(P8_13,0.5); set 50% duty at P8_13 
 
-6) readFrequencyFast(Pin u);
+6) readFrequencyFast(Pin u).
 -> returns the frequency output of that pin in Hz
 -> Don't confuse it with eCAP which can find out frequency of pulse train
 
-7) float readDutyFast(Pin u);
+7) float readDutyFast(Pin u).
 -> returns the duty cycle of that pin in range 0.0 to 1.0
 -> Don't confuse it with eCAP which can find out duty cycle of pulse trains
 
